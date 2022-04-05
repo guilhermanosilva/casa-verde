@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { InputHTMLAttributes, useState } from 'react'
 import * as S from './styles'
 
-type Input = {
+interface Input extends InputHTMLAttributes<HTMLInputElement> {
   type?: string
   icon?: string
   placeholder?: string
@@ -10,9 +10,9 @@ type Input = {
 
 export function Input({
   borderColor = 'yellow',
-  type = 'text',
   icon,
-  placeholder = ''
+  placeholder = '',
+  ...rest
 }: Input) {
   const [isFocused, setIsFocused] = useState(false)
 
@@ -20,10 +20,10 @@ export function Input({
     <S.InputGroup isFocused={isFocused} borderColor={borderColor}>
       {icon && <S.Icon src={icon} alt='Icone' />}
       <S.Input
-        type={type}
         placeholder={placeholder}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        {...rest}
       />
     </S.InputGroup>
   )

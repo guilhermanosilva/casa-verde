@@ -38,5 +38,11 @@ button {
     filter: brightness(0.9);
     cursor: pointer;
   }
+
+  &:disabled {
+    background-color: ${({ theme }) => theme.color.text.gray};
+    cursor: no-drop;
+    filter: none;
+  }
 }
 `
