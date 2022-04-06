@@ -1,7 +1,12 @@
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app'
+import { EnvironmentProvider } from '../contexts/Environment'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <EnvironmentProvider>
+      <Component {...pageProps} />
+    </EnvironmentProvider>
+  )
 }
 
-export default MyApp;
+export default MyApp
