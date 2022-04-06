@@ -27,9 +27,12 @@ a {
   text-decoration: none;
 }
 
+button, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
 button {
   border: none;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
 
   transition: all 0.25s;
