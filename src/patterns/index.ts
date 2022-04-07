@@ -1,5 +1,6 @@
 import { Menu } from './Menu'
 import { Hero } from './Hero'
-import { Layout } from './Layout'
+import { HomeLayout } from './HomeLayout'
+import { Sale } from './Sale'
 
-export { Menu, Hero, Layout }
+export { Menu, Hero, HomeLayout, Sale }

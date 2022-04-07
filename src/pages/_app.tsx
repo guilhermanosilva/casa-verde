@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
-import { EnvironmentProvider } from '../contexts/Environment'
+import { GlobalProvider } from 'contexts/GlobalProvider'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <EnvironmentProvider>
+    <GlobalProvider>
       <Component {...pageProps} />
-    </EnvironmentProvider>
+    </GlobalProvider>
   )
 }
 

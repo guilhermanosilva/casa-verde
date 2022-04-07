@@ -24,6 +24,13 @@ export const Text = styled.span<Text>`
       font-size: 4.2rem;
     `}
 
+    ${({ as }) =>
+    as === 'h3' &&
+    css`
+      font-family: 'Elsie Swash Caps', cursive;
+      font-size: 3.2rem;
+    `}
+
   ${({ as }) =>
     as === 'p' &&
     css`

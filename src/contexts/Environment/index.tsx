@@ -1,25 +1,16 @@
 import { createContext, Dispatch, SetStateAction, useState } from 'react'
 
-export type Environments = {
-  serviceId: string
-  templateId: string
-  userId: string
-}
+import {
+  EnvironmentProviderType,
+  EnvironmentsContextType,
+  EnvironmentsType
+} from 'types/environments'
 
-type EnvironmentsType = {
-  environments: Environments
-  setEnvironments: Dispatch<SetStateAction<Environments>>
-}
+export const EnvironmentContext = createContext({} as EnvironmentsContextType)
 
-type EnvironmentProvider = {
-  children: React.ReactNode
-}
-
-export const EnvironmentContext = createContext({} as EnvironmentsType)
-
-export const EnvironmentProvider = ({ children }: EnvironmentProvider) => {
-  const [environments, setEnvironments] = useState<Environments>(
-    {} as Environments
+export const EnvironmentProvider = ({ children }: EnvironmentProviderType) => {
+  const [environments, setEnvironments] = useState<EnvironmentsType>(
+    {} as EnvironmentsType
   )
 
   return (

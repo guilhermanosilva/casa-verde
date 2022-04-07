@@ -1,9 +1,8 @@
 import { MainCard } from 'components/Card/MainCard'
-import { Sale } from 'patterns/Sale'
-import { Hero, Menu } from '..'
+import { Hero, Menu, Sale } from '..'
 import * as S from './styles'
 
-export function Layout() {
+export function HomeLayout() {
   return (
     <S.Main>
       <S.BgImage
@@ -13,6 +12,7 @@ export function Layout() {
       <Menu />
       <Hero />
       <MainCard />
+      <Sale />
     </S.Main>
   )
 }
