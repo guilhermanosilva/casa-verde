@@ -1,3 +1,5 @@
+import { MainCard } from 'components/Card/MainCard'
+import { Sale } from 'patterns/Sale'
 import { Hero, Menu } from '..'
 import * as S from './styles'
 
@@ -10,6 +12,7 @@ export function Layout() {
       />
       <Menu />
       <Hero />
+      <MainCard />
     </S.Main>
   )
 }
