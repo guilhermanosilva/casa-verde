@@ -1,11 +1,12 @@
 import { createContext, useCallback, useState } from 'react'
+import { filterPlantsByRangePrice } from 'utils/filterPlantsByRangePrice'
+import { sortByName } from 'utils/sortObject'
 import {
   FilterByRangePrice,
   PlantsContextType,
   PlantsProviderType,
   PlantsType
 } from 'types/plants'
-import { filterPlantsByRangePrice, sortObject } from 'utils/sortObject'
 
 export const PlantsContext = createContext({} as PlantsContextType)
 
@@ -19,7 +20,7 @@ export const PlantsProvider = ({ children }: PlantsProviderType) => {
   }, [])
 
   const orderByName = (order: 'asc' | 'desc') => {
-    const plantsSorted = sortObject({
+    const plantsSorted = sortByName({
       items: plants,
       term: 'name',
       order

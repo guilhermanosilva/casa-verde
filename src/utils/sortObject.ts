@@ -1,12 +1,12 @@
 import { PlantsType } from 'types/plants'
 
-type SortObjectType = {
+type SortByNameType = {
   items: any[]
   term: string
   order?: 'asc' | 'desc'
 }
 
-export function sortObject({ items, term, order = 'asc' }: SortObjectType) {
+export function sortByName({ items, term, order = 'asc' }: SortByNameType) {
   return items.sort((x, y) => {
     if (order === 'desc') {
       if (x[term] > y[term]) return -1
@@ -18,20 +18,4 @@ export function sortObject({ items, term, order = 'asc' }: SortObjectType) {
       return 0
     }
   })
-}
-
-type FilterPlantsByRangePrice = {
-  plants: PlantsType[]
-  minPrice: number
-  maxPrice: number
-}
-
-export function filterPlantsByRangePrice({
-  plants,
-  minPrice,
-  maxPrice
-}: FilterPlantsByRangePrice) {
-  return plants.filter(
-    (plant) => plant.preco >= minPrice && plant.preco <= maxPrice
-  )
 }
