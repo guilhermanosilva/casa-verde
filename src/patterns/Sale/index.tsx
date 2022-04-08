@@ -15,8 +15,12 @@ export function Sale() {
 
       <SearchOptionsBox />
 
-      {plants?.map(
-        (plant) => plant.ordem > 0 && <SaleCard key={plant.name} {...plant} />
+      {plants.length > 0 ? (
+        plants?.map((plant) => <SaleCard key={plant.name} {...plant} />)
+      ) : (
+        <Text as='strong' color='gray'>
+          Nenhum produto encontrado
+        </Text>
       )}
     </S.Container>
   )

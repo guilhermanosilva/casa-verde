@@ -28,8 +28,13 @@ export const CardInfo = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1.6rem 0;
   gap: 0.8rem;
   margin-right: 1.6rem;
+
+  span {
+    margin-top: 2.4rem;
+  }
 `
 
 export const CardButton = styled.button`

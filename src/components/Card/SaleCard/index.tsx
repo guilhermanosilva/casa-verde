@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 interface SaleCartType extends PlantsType {}
 
-export function SaleCard({ img, name, preco }: SaleCartType) {
+export function SaleCard({ img, name, preco, ordem }: SaleCartType) {
   return (
     <S.Container>
       <S.BgImage bgImage={`./img/sale/${img}.png`}></S.BgImage>
@@ -19,10 +19,17 @@ export function SaleCard({ img, name, preco }: SaleCartType) {
             currency: 'BRL'
           }).format(preco)}
         </Text>
-        <S.CardButton type='button'>
-          Comprar{' '}
-          <Image src={arrow} alt='Seta apontando para direita de cor amarela' />
-        </S.CardButton>
+        {ordem > 0 ? (
+          <S.CardButton type='button'>
+            Comprar{' '}
+            <Image
+              src={arrow}
+              alt='Seta apontando para direita de cor amarela'
+            />
+          </S.CardButton>
+        ) : (
+          <Text color='danger'>Sem estoque</Text>
+        )}
       </S.CardInfo>
     </S.Container>
   )
