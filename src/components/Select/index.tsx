@@ -7,7 +7,7 @@ export const Select = styled.select`
     border: 1px solid ${theme.color.text.gray};
     color: ${theme.color.text.gray};
     font-weight: 500;
-    padding: 0.4rem 1.6rem;
+    padding: 0.4rem 0.8rem;
     outline: ${theme.color.text.gray};
   `}
 `

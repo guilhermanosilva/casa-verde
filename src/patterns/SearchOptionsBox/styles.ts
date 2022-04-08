@@ -7,4 +7,11 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 `
