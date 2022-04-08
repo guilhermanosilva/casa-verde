@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import type { NextPage } from 'next'
 
-import { Head } from 'components'
-import { HomeLayout } from 'patterns'
-
 import { useEnvironments, usePlants } from 'hooks'
 import { HomeType } from 'types/home'
+
+import { Head } from 'components'
+import { HomeLayout } from 'patterns'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from 'styles/GlobalStyle'
@@ -18,7 +18,7 @@ const Home: NextPage<HomeType> = ({ environments, plants }: HomeType) => {
   useEffect(() => {
     setEnvironments(environments)
     setPlants(plants)
-  }, [environments, plants, setEnvironments, setPlants])
+  }, []) // eslint-disable-line
 
   return (
     <ThemeProvider theme={light}>

@@ -1,4 +1,4 @@
-import { MainCard } from 'components/Card/MainCard'
+import { MainCard } from 'components/'
 import { Hero, Menu, Sale } from '..'
 import * as S from './styles'
 

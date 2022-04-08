@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-button, input {
+button, input, select {
   font-family: 'Montserrat', sans-serif;
 }
 

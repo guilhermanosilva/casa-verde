@@ -5,7 +5,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.6rem;
 `
 
 export const Header = styled.header`

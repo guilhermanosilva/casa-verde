@@ -10,6 +10,7 @@ export type PlantsType = {
 export type PlantsContextType = {
   plants: PlantsType[]
   setPlants: Dispatch<SetStateAction<PlantsType[]>>
+  orderByName: (order: 'asc' | 'desc') => void
 }
 
 export type PlantsProviderType = {
