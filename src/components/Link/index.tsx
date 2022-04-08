@@ -1,8 +1,11 @@
+import * as S from './styles'
+
 type Link = {
-  children: React.ReactNode;
-  href: string;
-};
+  children: React.ReactNode
+  href: string
+}
 
 export function Link({ children, href }: Link) {
-  return <a href={href}>{children}</a>;
+  return <S.Link href={href}>{children}</S.Link>
 }
+
