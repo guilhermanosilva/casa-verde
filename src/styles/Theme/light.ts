@@ -1,6 +1,7 @@
 export const light = {
   color: {
     background: '#fefefe',
+    transparentBackground: 'rgba(0,0,0,0.3)',
     white: '#ffffff',
     yellow: '#FFCB47',
     green: '#8DCE97',

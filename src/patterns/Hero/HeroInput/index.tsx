@@ -6,6 +6,7 @@ import { useEnvironments } from 'hooks/useEnvironments'
 
 import mailIcon from 'assets/mail.svg'
 import * as S from './styles'
+import { Modal } from 'components/Modal'
 
 type HeroInput = {
   serviceId: string
@@ -14,6 +15,7 @@ type HeroInput = {
 }
 
 export function HeroInput() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const [email, setEmail] = useState('')
   const [isDisabled, setIsDisabled] = useState(true)
   const form = useRef(null)
@@ -38,11 +40,7 @@ export function HeroInput() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-
-    alert(
-      'Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ' +
-        email
-    )
+    setIsModalOpen(true)
     sendEmail()
   }
 
@@ -60,6 +58,7 @@ export function HeroInput() {
       <Button color='green' type='submit' disabled={isDisabled}>
         Assinar newsletter
       </Button>
+      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
     </S.Container>
   )
 }
