@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Main = styled.main`
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    max-width: 90%;
+  }
 `
 
 export const BgImage = styled.img`
