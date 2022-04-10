@@ -10,4 +10,10 @@ export const BgImage = styled.img`
   top: 0;
   right: 0;
   z-index: -1;
+
+  width: 50vw;
+
+  @media (max-width: 1366px) {
+    width: min(80rem, 70%);
+  }
 `
