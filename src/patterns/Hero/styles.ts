@@ -19,4 +19,12 @@ export const InfoWrapper = styled.div`
   h1 {
     margin: 1.6rem 0;
   }
+
+  @media (max-width: 1000px) {
+    padding-top: 6rem;
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+  }
 `

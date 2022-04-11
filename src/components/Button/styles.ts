@@ -12,4 +12,8 @@ export const Button = styled.button<Button>`
 
   min-width: 18rem;
   padding: 0 1.6rem;
+
+  @media (max-width: 780px) {
+    height: 5.6rem;
+  }
 `

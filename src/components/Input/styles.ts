@@ -47,4 +47,8 @@ export const Input = styled.input`
     font-size: 1.6rem;
     font-weight: 400;
   }
+
+  @media (max-width: 780px) {
+    height: 5.6rem;
+  }
 `

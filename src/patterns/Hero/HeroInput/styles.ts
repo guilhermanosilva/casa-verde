@@ -12,4 +12,11 @@ export const Container = styled.form`
   button {
     margin: 0;
   }
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+    gap: 0.8rem;
+    height: initial;
+    margin: 4rem 0;
+  }
 `
