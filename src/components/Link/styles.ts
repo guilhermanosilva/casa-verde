@@ -25,4 +25,8 @@ export const Link = styled.a`
   &:hover::before {
     animation: ${({ theme }) => borderToRight(theme)} 0.35s forwards;
   }
+
+  @media (max-width: 780px) {
+    font-size: 2rem;
+  }
 `
