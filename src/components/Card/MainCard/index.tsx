@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Text } from 'components/Text'
 import mainCardPlant from 'assets/main-card-plant.png'
 
@@ -7,7 +6,10 @@ import * as S from './styles'
 export function MainCard() {
   return (
     <S.Container>
-      <Image src={mainCardPlant} alt='Folhas de uma planta samambaia' />
+      <S.ImageWrapper>
+        <S.ImageCard src={mainCardPlant} alt='Folhas de uma planta samambaia' />
+      </S.ImageWrapper>
+
       <S.TextsWrapper>
         <S.CardHeader>
           <Text color='gray'>Como conseguir</Text>
