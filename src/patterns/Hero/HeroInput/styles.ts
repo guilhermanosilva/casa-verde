@@ -14,9 +14,14 @@ export const Container = styled.form`
   }
 
   @media (max-width: 780px) {
+    box-shadow: none;
     flex-direction: column;
     gap: 0.8rem;
     height: initial;
     margin: 4rem 0;
+
+    input {
+      box-shadow: ${({ theme }) => theme.color.boxShadow};
+    }
   }
 `
