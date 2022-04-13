@@ -56,9 +56,6 @@ export const TextsWrapper = styled.div`
     width: 100%;
     justify-content: center;
     height: fit-content;
-
-    position: relative;
-    z-index: 1;
   }
 `
 
