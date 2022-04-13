@@ -26,5 +26,18 @@ export const InfoWrapper = styled.div`
 
   @media (max-width: 780px) {
     width: 100%;
+
+    span {
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 4.8rem;
+      margin: 0.4rem 0 1.6rem 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
   }
 `

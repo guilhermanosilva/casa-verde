@@ -35,7 +35,7 @@ export const ImageWrapper = styled.picture`
 
 export const ImageCard = styled(Image)`
   @media (max-width: 780px) {
-    opacity: 0.1;
+    opacity: 0.05;
   }
 `
 
