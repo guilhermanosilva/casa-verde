@@ -22,25 +22,20 @@ export const ImageWrapper = styled.picture`
   overflow: hidden;
 
   @media (max-width: 780px) {
+    padding: 0;
+    display: flex;
+
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 `
 
 export const ImageCard = styled(Image)`
   @media (max-width: 780px) {
     opacity: 0.1;
-  }
-
-  @media (max-width: 640px) {
-    height: 50rem;
   }
 `
 
