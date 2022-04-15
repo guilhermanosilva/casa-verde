@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
+  height: 65rem;
+  width: 100%;
+  position: relative;
 `
 
 export const InfoWrapper = styled.div`
@@ -20,8 +23,13 @@ export const InfoWrapper = styled.div`
     margin: 1.6rem 0;
   }
 
-  @media (max-width: 1000px) {
-    padding-top: 6rem;
+  @media (max-width: 1080px) {
+    width: 60%;
+    height: 100%;
+  }
+
+  @media (max-width: 900px) {
+    width: 70%;
   }
 
   @media (max-width: 780px) {

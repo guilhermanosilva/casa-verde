@@ -8,6 +8,7 @@ export function HeroImage() {
       <Image
         src={heroImage}
         alt='Planta pequena dentro de um jarro feito de cordas entrelaçadas'
+        layout='raw'
       />
     </Figure>
   )
