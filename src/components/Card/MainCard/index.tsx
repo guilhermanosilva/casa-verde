@@ -7,7 +7,13 @@ export function MainCard() {
   return (
     <S.Container>
       <S.ImageWrapper>
-        <S.ImageCard src={mainCardPlant} alt='Folhas de uma planta samambaia' />
+        <S.ImageCard
+          src={mainCardPlant}
+          alt='Folhas de uma planta samambaia'
+          width={585}
+          height={440}
+          layout='raw'
+        />
       </S.ImageWrapper>
 
       <S.TextsWrapper>

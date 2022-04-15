@@ -9,6 +9,7 @@ export const Container = styled.section`
   width: min(995px, 100%);
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 
@@ -18,23 +19,19 @@ export const Container = styled.section`
 `
 
 export const ImageWrapper = styled.picture`
-  padding: 5px;
+  width: 60%;
+  height: 100%;
   overflow: hidden;
 
   @media (max-width: 780px) {
-    padding: 0;
-    display: flex;
-
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 100%;
   }
 `
 
 export const ImageCard = styled(Image)`
   @media (max-width: 780px) {
+    width: 100%;
     opacity: 0.05;
   }
 `
@@ -46,6 +43,7 @@ export const TextsWrapper = styled.div`
   flex-direction: column;
   gap: 0.8rem;
   height: 100%;
+  width: 40%;
 
   @media (max-width: 780px) {
     width: 100%;
