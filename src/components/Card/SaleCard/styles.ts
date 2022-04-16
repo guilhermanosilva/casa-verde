@@ -15,6 +15,10 @@ export const Container = styled.div`
     box-shadow: ${({ theme }) =>
       `${theme.color.boxShadow}, 10px 10px 30px rgba(0, 0, 0, 0.2)`};
   }
+
+  @media (max-width: 865px) {
+    width: 100%;
+  }
 `
 
 export const BgImage = styled.div<{ bgImage: string }>`
@@ -22,6 +26,14 @@ export const BgImage = styled.div<{ bgImage: string }>`
   background-size: cover;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 865px) {
+    background-size: contain;
+  }
+
+  @media (max-width: 480px) {
+    background-size: cover;
+  }
 `
 
 export const CardInfo = styled.section`
