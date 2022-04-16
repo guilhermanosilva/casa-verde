@@ -10,4 +10,9 @@ export const Select = styled.select`
     padding: 0.4rem 0.8rem;
     outline: ${theme.color.text.gray};
   `}
+
+  @media (max-width: 780px) {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+  }
 `

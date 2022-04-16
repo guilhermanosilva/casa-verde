@@ -19,11 +19,11 @@ export function FilterByRangePrice() {
       <option value='default' disabled>
         Preço
       </option>
-      <option value='0-20'>até R$ 20:00</option>
-      <option value='20-40'>R$ 20:00 a R$ 40:00</option>
-      <option value='40-60'>R$ 40:00 a R$ 60:00</option>
-      <option value='60-80'>R$ 60:00 a R$ 80:00</option>
-      <option value='80-100'>R$ 80:00 a R$ 100:00</option>
+      <option value='0-20'>até R$ 20,00</option>
+      <option value='20-40'>R$ 20,00 a R$ 40,00</option>
+      <option value='40-60'>R$ 40,00 a R$ 60,00</option>
+      <option value='60-80'>R$ 60,00 a R$ 80,00</option>
+      <option value='80-100'>R$ 80,00 a R$ 100,00</option>
     </Select>
   )
 }
