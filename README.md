@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Casa Verde
 
-## Getting Started
+**Projeto desenvolvido com base no desafio [7 Days of Code](https://7daysofcode.io/matricula/react) da Alura**
 
-First, run the development server:
+> Durante os 7 Days de React, você irá praticar as tarefas mais comuns de alguém que trabalha com desenvolvimento de aplicações Front-end. Você irá destrinchar um layout do Figma e convertê-lo em código, e nesse processo praticará a organização de arquivos CSS, conexão com APIs, e boas práticas de segurança ao trabalhar com API Keys e informações sensíveis.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> **DIA 1**  
+Logo no primeiro dia, você já vai escrever seu primeiro código! Você vai pegar um arquivo base do Figma e transformá-lo em componentes React.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **DIA 2**  
+Tendo o seu layout montado, você irá adicionar uma biblioteca de CSS-in-JS para organizar os seus arquivos de estilo.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+> **DIA 3**  
+Chegou a hora de você praticar a utilização dos hooks do React.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+> **DIA 4**  
+Conectar o seu front-end com uma API é essencial para o seu dia a dia criando aplicações modernas. Por isso, nesse dia, você precisará enviar informações para uma API de back-end.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> **DIA 5**  
+Além de enviar informações para uma API, você também precisa receber informações e, a partir delas, montar os componentes na aplicação. No seu quinto dia de desafio, você irá consumir uma API que nos dará informações sobre os produtos da sua loja.
 
-## Learn More
+> **DIA 6**  
+Chegou o momento de você tirar vantagem dos hooks do React para deixar sua aplicação ainda mais dinâmica e melhorar a usabilidade através de filtros e ordenação.
 
-To learn more about Next.js, take a look at the following resources:
+> **DIA 7**  
+No último dos 7 dias, você terá uma aplicação React pronta que poderá mostrar com orgulho no seu portfólio. Esse é o dia que você colocará no ar o seu site para que mais pessoas consigam ver o que você criou. Você irá fechar com chave de ouro!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
